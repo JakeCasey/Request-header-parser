@@ -57,6 +57,6 @@ app.get('/:date', function(req, res){
     res.send(JSON.stringify(date));
 })
 
-app.listen(8080, function () {
+app.listen(80, function () {
   console.log('listening on port 8080!')
 })
