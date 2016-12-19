@@ -22,8 +22,7 @@ app.get('/:date', function(req, res){
     else{
         date1 = new Date(req.params.date*1000);
     }
-   
-    console.log(date1);
+ 
     
     //catch nondates
     if(isNaN(date1)){
