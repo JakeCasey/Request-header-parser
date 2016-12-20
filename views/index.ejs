@@ -1,4 +1,4 @@
-<title> Timestamp Microservice</title>
+<title> Header Parser</title>
 <link rel="stylesheet" href="./views/css/style.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -8,23 +8,21 @@
 <body>
 <div class="container">
             <h1 class="header">
-                Timestamp microservice
+                Header Parser
             </h1>
             <blockquote>
                 User stories:
-                <ul>1) I can pass a string as a parameter, and it will check to see whether that string 
-                contains either a unix timestamp or a natural language date (example: January 1, 2016)</ul>
-                <ul>2) If it does, it returns both the Unix timestamp and the natural language form of that date.</ul>
-                <ul>3) If it does not contain a date or Unix timestamp, it returns null for those properties.</ul>
+                <ul>I can get the IP address, language and operating system for my browser.</ul>
+                
             </blockquote>
             <h3>Example usage:</h3>
-            <code>https://timestamp-ms.herokuapp.com/December%2015,%202015</code><br>
-            <code>https://timestamp-ms.herokuapp.com/1450137600</code>
+            <code>https://thissite.com/api/whoami</code><br>
             <h3>Example output:</h3>
             <code>
                 {
-                  "unix": 1450137600,
-                  "natural": "December 15, 2015"
+                "ipaddress":"162.233.117.2",
+                "language":"en-US",
+                "software":"Windows NT 10.0; Win64; x64"
                 }
             </code>
         </div>
