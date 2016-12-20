@@ -14,11 +14,14 @@ app.get('/', function (req, res) {
 
 app.get('/api/whoami', function(req, res){
     
-        
+        var data = {
+            'ipaddress' : req.headers['x-forwarded-for'],
+            'language' : req.headers['accept-language'],
+            'software' : req.headers['user-agent']
+            
+        }
     
-    
-    
-    res.send('test');
+    res.send(data);
 })
 
 app.listen(process.env.PORT || 80, function () {
